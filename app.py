@@ -12,7 +12,7 @@ with open("label_encoders.pkl", "rb") as f:
     label_encoders = pickle.load(f)
 
 # Load trained model
-model = load_model("drug_relapse_lstm_model.keras")
+model = load_model("drug_relapse_lstm_model.keras", compile=False)
 
 st.title("💊 Drug Relapse Prediction App")
 

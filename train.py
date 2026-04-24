@@ -7,7 +7,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
 # Load dataset
-df = pd.read_csv(r"C:/Users/Aman Srivastava/Desktop/Programs/GSOC/drug_relapseProject/patient_drug_relapse_dataset.csv")
+df = pd.read_csv("patient_drug_relapse_dataset.csv")
 
 # Drop ID column
 df = df.drop(columns=["patient_id"])
